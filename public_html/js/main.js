@@ -11,11 +11,34 @@ $(document).ready(function() {
 				client_secret: config.client_secret
 			}
 		}).done(function(user) {
-			console.log(user);
-			$.ajax(
-
-			).done(function(repos) {
-
+			$.ajax({
+				url: 'https://api.github.com/users/' + username + '/repos',
+				data: {
+					client_id: config.client_id,
+					client_secret: config.client_secret,
+					sort: 'created: asc',
+					per_page: 5
+				}
+		}).done(function(repos) {
+				$.each(repos, function(index, repo) {
+					$('#repos').append(`
+					<div class="well">
+						<div class="row">
+							<div class="col-md-7">
+								<strong>${repo.name}</strong>: ${repo.description}
+							</div>
+							<div class="col-md-3">
+								<span class="label label-default">Forks: ${repo.forks_count}</span>
+								<span class="label label-primary">Watchers: ${repo.watchers_count}</span>
+								<span class="label label-success">Stars: ${repo.stargazers_count}</span>
+							</div>
+							<div class="col-md-2">
+								<a href="${repo.html_url}" target="_blank" class="btn btn-default">Repo Page</a>
+							</div>
+						</div>
+					</div>
+					`);
+				});
 			});
 			$('#profile').html(`
 				<div class="panel panel-default">
