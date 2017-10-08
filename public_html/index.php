@@ -46,6 +46,7 @@
 				<p class="lead">Enter a username to fetch a users profile info and repos</p>
 				<input type="text" id="search-user" class="form-control" placeholder="Github Username...">
 			</div><!-- /.search-container -->
+			<br>
 			<div id="profile"></div>
 		</div><!-- /.container -->
 	</body>
