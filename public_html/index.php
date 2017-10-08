@@ -6,7 +6,6 @@
 
 		<!-- Bootstrap core CSS -->
 		<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet">
-<!--		<link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">-->
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css">
 

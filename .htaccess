@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^githubfinder.jackreuter.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.githubfinder.jackreuter.com$
+RewriteRule (.*) https://www.githubfinder.jackreuter.com/$1 [L]
+RewriteCond %{REQUEST_URI} !public_html/
+RewriteRule (.*) /public_html/$1 [L]
