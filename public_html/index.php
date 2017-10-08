@@ -16,6 +16,7 @@
 		<!-- Javascript for Bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- Custom JS -->
+		<script type="text/javascript" src="js/config.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 		<title>Github Finder</title>

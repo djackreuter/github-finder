@@ -7,8 +7,11 @@ $(document).ready(function() {
 		$.ajax({
 			url:'https://api.github.com/users/' + username,
 			data: {
-
+				client_id : config.client_id,
+				client_secret : config.client_secret
 			}
+		}).done(function(user) {
+			console.log(user);
 		});
 	});
 });
