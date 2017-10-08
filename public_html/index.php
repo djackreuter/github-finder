@@ -7,6 +7,7 @@
 		<!-- Bootstrap core CSS -->
 		<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom CSS -->
+		<link rel="shortcut icon" href="images/j-icon.ico"/>
 		<link rel="stylesheet" href="css/style.css">
 
 		<!-- jQuery v3.2.1-->
