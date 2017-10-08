@@ -59,7 +59,7 @@ $(document).ready(function() {
 						<br><br>
 						<ul class="list-group">
 							<li class="list-group-item"><strong>Company: </strong>${user.company}</li>
-							<li class="list-group-item"><strong>Website: </strong><a href="${user.blog}" target="_blank">${user.blog}</a></li>
+							<li class="list-group-item"><strong>Website: </strong><a href="https://${user.blog}" target="_blank">${user.blog}</a></li>
 							<li class="list-group-item"><strong>Location: </strong>${user.location}</li>
 							<li class="list-group-item"><strong>Member Since: </strong>${user.created_at}</li>
 						</ul>
