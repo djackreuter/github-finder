@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap core CSS -->
-		<link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">
+		<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet">
+<!--		<link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">-->
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css">
 
