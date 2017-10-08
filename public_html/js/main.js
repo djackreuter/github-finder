@@ -11,6 +11,12 @@ $(document).ready(function() {
 				client_secret: config.client_secret
 			}
 		}).done(function(user) {
+			console.log(user);
+			$.ajax(
+
+			).done(function(repos) {
+
+			});
 			$('#profile').html(`
 				<div class="panel panel-default">
 				  <div class="panel-heading">
@@ -29,12 +35,17 @@ $(document).ready(function() {
 						<span class="label label-info">Following: ${user.following}</span>
 						<br><br>
 						<ul class="list-group">
-						
+							<li class="list-group-item">Company: ${user.company}</li>
+							<li class="list-group-item">Website/blog: ${user.blog}</li>
+							<li class="list-group-item">Location: ${user.location}</li>
+							<li class="list-group-item">Member Since: ${user.created_at}</li>
 						</ul>
 						</div><!-- /.col-md-9 -->
 					</div><!-- /.row -->
 				  </div><!-- /.panel-body -->
 				</div><!-- /.panel panel-default -->
+				<h3 class="page-header">Latest Repos</h3>
+				<div id="repos"></div>
 			`);
 		});
 	});
