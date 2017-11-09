@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap core CSS -->
-		<link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet">
+		<link href="https://bootswatch.com/3/superhero/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom CSS -->
 		<link rel="shortcut icon" href="images/j-icon.ico"/>
 		<link rel="stylesheet" href="css/style.css">
